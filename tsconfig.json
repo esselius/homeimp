@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "types": ["node"],
+    "outDir": "./services",
+    "target": "es6"
+  },
+    "include": [
+      "./src/*"
+    ]
+}

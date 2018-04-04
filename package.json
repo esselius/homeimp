@@ -1,0 +1,44 @@
+{
+  "name": "homeimp",
+  "version": "1.0.0",
+  "description": "My Moleculer microservices project",
+  "scripts": {
+    "dev": "moleculer-runner --repl --hot services",
+    "start": "./node_modules/.bin/moleculer-runner",
+    "ci": "jest --watch",
+    "test": "jest --coverage"
+  },
+  "keywords": [
+    "microservices",
+    "moleculer"
+  ],
+  "author": "",
+  "devDependencies": {
+    "@types/jest": "^22.2.2",
+    "jest": "^22.4.2",
+    "jest-cli": "^22.4.2",
+    "moleculer-repl": "^0.4.0",
+    "ts-jest": "^22.4.2",
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.10.0"
+  },
+  "dependencies": {
+    "@types/node": "^9.6.2",
+    "ajv": "^6.4.0",
+    "moleculer": "^0.12.0",
+    "moleculer-web": "^0.6.0",
+    "nats": "^0.8.2",
+    "typescript": "^2.8.1"
+  },
+  "engines": {
+    "node": ">= 6.x.x"
+  },
+  "jest": {
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "node",
+    "rootDir": "./services",
+    "roots": [
+      "../test"
+    ]
+  }
+}
